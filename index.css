@@ -1,0 +1,316 @@
+:root {--dark-color: rgb(0, 0, 0);
+    --white-color: white;
+    --light-color: grey;
+    --purple-color: rgb(153, 0, 255);
+    --navyblue-color: rgb(44, 7, 104);}
+    
+    *  {margin:0px;
+    padding: 0px;
+    box-sizing: border-box;}
+    
+    body { 
+        
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        background-color: rgb(142, 35, 88);
+        color: var(--heading-color);}
+    
+ /* Adding css variable to the entire work */
+    
+        .box  { margin: 0, auto;
+            box-shadow: 1px 5px 5px 8px rgb(100, 91, 91);
+            border-radius: 22px;
+            background-color: white; 
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+    margin-top: 50px;padding: 50px;
+    }
+    
+    .container{ 
+        margin: 58px auto 0;
+        display: flex;}
+    
+    
+    .navigation-enclosed{
+        display: flex;
+    }
+        nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px
+    } 
+    
+    .navigation{margin-bottom: 12px;}
+    
+    .my-avatar{
+        border-radius: 50px;
+        margin-right: 5px;
+    }
+    
+    .personal-contacts{
+        list-style: none;
+        align-self: center;
+    }
+    
+    .contact-section {
+        margin-bottom: 5px;
+        padding-left: 60px;
+    }
+    
+    .contact-section a {
+        text-decoration: solid;
+        color: rgb(109, 109, 250)
+    }
+    
+    hr {
+        border-top: 1px dashed lightgrey;
+        width: 98%;
+        margin: auto;
+      }
+      
+     
+    .my-name {
+        align-self: center;
+        color: #333333;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        
+    }
+    .surname {
+        font-weight: normal;
+        font-size: 35px;
+        padding-left: 10px;}
+    
+    
+    .CV h2 {   
+        font-weight: 700; 
+        font-size: 20px;
+        padding-right: 40px;
+        line-height: 1.8625;
+        color: var(--purple-color);
+    }
+    
+    .pic-container{
+        display: grid;
+        column-gap: 10px;
+        grid-template-columns: auto auto auto auto auto auto;
+       margin-right: 26px;
+    padding-left: 1px;
+    
+    
+    }
+    
+    .highlight figure img{
+        height: 60px;
+    width: 60px;   }
+     
+    .content .bold {
+        font-size: 15px;
+        font-weight: 800;
+        line-height: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    .content .info, p{font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        padding-bottom: 10px;
+    }
+       
+    
+     .content .enbolden1,
+    .time {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 17px;
+        color: gray;
+        padding-bottom: 10px;
+    
+      
+    }
+    .period{ font-size: 16px;
+        font-weight: 600;
+        line-height: 17px;
+        color: gray;
+        padding-bottom: 5px;
+        text-align: center;
+        align-self: flex-end;
+        margin-left: 220px; }
+    
+    .activity-list {
+        width: 390px;
+        margin-top: 40px;
+    
+    }
+    
+    .activity-list li {
+        list-style: none;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+    
+    .activity-list li::before {
+        content: "-";
+        padding-right: 5px;}
+    
+    .project-section, .content a {
+        text-decoration: none;
+        color: blue;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    
+    .info .bold, .enbolden1{
+    
+    align-self: flex;
+    display: flex;
+    padding-bottom: 20px;}
+    
+    
+    .experience .info, p
+    {
+        margin-bottom: 6px;
+         text-align: left;
+    
+    }
+    
+    p{
+        text-align:center;
+        font-size: 12px;
+        font-weight: normal;
+    
+    
+    }
+    .CV .project-section {
+        margin-right: 128px;
+    }
+    
+    
+    .content p {
+        font-weight: 700;
+        line-height: 1.311;
+        padding-left: 17px;
+    
+    
+    }
+    
+    /*for collapsible*/
+    
+    .cbcollapsible {
+        cursor: pointer;
+        padding: 40px 20px 20px 40px;
+        width: 80%;
+        border: none;
+        text-align: left;
+        outline: none;
+      }
+      
+      .content {
+        padding: 0 240px;
+        display: none;
+        overflow: hidden; 
+      }
+    
+      
+    /*for back-to-top button*/
+      /*#myArrow {display:none; position:fixed; bottom:20px; right:30px;
+      /*z-index:99; border:none; outline:none; background-color: rgb(199, 45, 194);
+    color: white; cursor: pointer; padding: 15px; border-radius: 4px;}
+    
+    #myArrow:hover {background-color:olive;}
+
+ /* Adding css variable in the arrow section */
+  
+ .scroll-up {
+    margin-left: 50px;
+    position: fixed;
+    bottom:
+    50px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 99;
+    top: 700px;}
+
+.arrow {
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 10px;
+    position: fixed;
+   padding-left: 1200px;
+   margin-bottom: 50px;
+   
+}
+
+.arrow img {
+    width: 10px;
+    height: 10px;
+}
+    
+    /*for theme change*/
+    .conButton {position: fixed; top:140px;
+         background-color: rgb(2,10,31);
+          color:azure; right: 80px; z-index:99;}
+          
+          .conButton:hover {background-color: rgb(3, 121, 121);}
+    
+    .darkmodeforsmall {display: none;}
+    
+    .mystyle {background-color: black;
+    color: white;}
+/*for page responsiveness*/
+/*for smaller screens*/
+
+@media screen and (max-width: 600px) {
+    div.box {
+      display: none;
+    }
+  }
+
+.container {
+    margin: 0;
+        flex-wrap: nowrap;
+      }
+    img {
+        max-width: 100%;}
+    
+        .navigation-enclosed a {
+            display: none;
+        }
+       
+        }
+    
+/*for smaller screens*/
+
+@media (max-width: 360px) {
+    .content,
+    .info-section {
+        display: block;
+    }
+    .conatiner {margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;}
+}
+/*for darkmode*/
+
+@media (max-width: 360px) {
+    .hide {
+        display: none;
+    }
+    .ConButtons {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        bottom: 30px;
+        height: 30px;
+        right: 20px;
+        text-align: center;
+    }
+}
+
